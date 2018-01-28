@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Magic Mirror</title>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Navigation -->
+
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand" href="index.html">Sirtaj Singh</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#thetarget">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="thetarget">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="page1.html">Magic Mirror</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/sirtaj-singh-865092143/" target="_blank">Linkedin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/Sirtaj-s" target="_blank">Github</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="p1-img1">
+      <div class="ptext">
+        <span class="border">
+          My Magic Mirror
+        </span>
+      </div>
+    </div>
+
+<div id="wrapper">
+    <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="index.html">
+                            Sirtaj Singh
+                        </a>
+                    </li>
+                    <li>
+                        <a href="page1.html">Part 1: Planning</a>
+                    </li>
+                    <li>
+                        <a href="#">Part 2: Software</a>
+                    </li>
+                    <li>
+                        <a href="#">Part 3: Assembly
+                               (soon)</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+            <div class="container-fluid">
+    <div class="container story">
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+          <!-- Title -->
+          <h1 class="mt-4">Part2: Software</h1>
+
+          <!-- Author -->
+          <p class="lead">
+            by
+            <a href="#">Sirtaj Singh</a>
+          </p>
+
+
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" src="img/mirrorosinstall.jpg" alt="MirrorOS installation">
+
+          <hr>
+
+          <!-- Post Content -->
+          <p class="lead">Donwloading and setting up Mirror OS.</p>
+
+
+          <p> So the first task of building a mirror is the software.
+            The original creator of the Magic Mirror created a program to
+            create the base of Magic Mirror with the ability to add other
+            custom information pieces know as modules created by others.
+            Modules can be as simple as a clock to telling scores in a sports
+            league or the current time of your commute using Google API. The
+            program is called <a href="https://magicmirror.builders"> MirrorOS</a>
+            and can be downloaded on a Raspian with a simple bash command.</p>
+
+          <p>With a large community, there are a tonne of different modules that
+            you can add to personalize your Magic Mirror. These are downloaded
+            by choosing a directory and then running a <git clone> command with
+              the link to github of the module desired. Then, to add the module
+              to the mirror interface, you must add it to the config.js file.
+              This file is where everything had to come together. And was the
+              hardest software issue for me, someone who does not have much
+              coding expereince. It was a challenege when some modules didn’t
+              work and having to trouble shoot small things over and over and over again.<br/></p>
+
+
+          <p>IAPI’s play a huge role in the magic mirror. A lot of the modules I
+            used got information from other sites such as Google Calendar and weather
+            sites. I also used RSS feeds to enable news from multiple sources.
+            These things are what makes the mirror so amazing. It centralizes
+            all this information in a simple screen that you can easily view when
+            getting ready to go to work or just to glance it to get some quick information.<br/></p>
+
+            <p>The one that confused me the most was try
+              to get a network remote connected to the mirror. I used the recommended
+              module code and unfortunately that didn’t work. So, I tried a few
+              other things. I tried connecting by different networks and re-write
+              some parts of the code. Eventually I figured out that I had to
+              whitelist my IP address. Now, I wanted to display the IP dress
+              that needs to be connected for the mirror. And now another problem.
+              The entire program would crash when trying to enable this. Back and
+              forth looking and looking. I was frustrated. Turns out I forgot a comma. It was embarrassing.
+                A simple thing that caused me to stay up for an extra hours However, better
+                now then later I guess. I also was able to learn about a cool tool
+                because of this. <a href="jshint.com">jshint.com</a> is a great site to help debug.
+                 I was able to see the glaring syntax error because of this.<br /></p>
+
+                 <p> Here is a list of modules that I used: </p>
+
+<ul>
+    <li>Clock: Obvious, to tell time</li>
+    <li>Current weather: Using an API to display the weather at that moment in an area</li>
+    <li>Weather forecast: Long term weather enabled using an API</li>
+    <li>Newsfeed: Powered by an RSS feed displaying info from CBC Toronto, CBC World, MarketWatch and Google News Business.</li>
+    <li>Stocks: Displays stock prices using Yahoo stocks</li>
+    <li>Traffic: Displays commute time via the best route using Google Maps</li>
+    <li>Remote Control: Control magic mirror appearance and power using a separate device connected on the same network</li>
+    <li>Calendar_Monthly: Displays a monthly calendar</li>
+
+</ul>
+
+
+
+
+          <p><br/> And if you are interested,
+            <a href="https://github.com/Sirtaj-s/My-Mirror-OS-Config" target="_blank">here</a>
+            is a link to my config.js from my Magic Mirror.
+          </p>
+
+
+          <hr>
+
+
+          <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Project Menu</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+    <div class="p1-img1 end-of-page">
+      <div class="ptext">
+      
+      <!--  <span class="border">
+
+          <div class="box social-media">
+            <a class="linkdin ion-social-linkedin" href="#"></a>
+            <a class="github ion-social-github" href="#"></a>
+            <a class="email ion-email" href=#></a>
+          </div>
+
+
+        </span>-->
+      </div>
+    </div>
+  </body>
+
+</html>
